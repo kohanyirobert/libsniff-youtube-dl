@@ -5,13 +5,12 @@
   "scripts": {
     "test": "mocha test.js"
   },
+  "dependencies": {
+    "libsniff-download": "git://github.com/kohanyirobert/libsniff-download.git#v0.0.1"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mkdirp": "^0.5.1",
     "mocha": "^2.4.5",
-    "request": "^2.69.0",
-    "rimraf": "^2.5.2",
-    "tmp": "0.0.28",
-    "vargs-callback": "^0.2.4"
+    "tmp": "0.0.28"
   }
 }
