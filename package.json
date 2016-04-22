@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.3",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test/"
   },
   "dependencies": {
-    "libsniff-download": "git://github.com/kohanyirobert/libsniff-download.git#v0.0.2"
+    "libsniff-download": "git://github.com/kohanyirobert/libsniff-download.git#v1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
