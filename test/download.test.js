@@ -17,14 +17,14 @@ describe('download.js', function() {
         ]
       }
       download(options, function(downloads) {
-        assert.equal(downloads.length, options.targets.length)
+        assert(downloads.length === options.targets.length)
         downloads.forEach(function(download) {
-          assert.include(options.targets, download.target)
-          assert.equal(download.files.length, 1)
+          assert(options.targets.indexOf(download.target) != -1)
+          assert(download.files.length === 1)
           download.files.forEach(function(file) {
             var destPath = path.resolve(path.join(options.dir, download.target))
-            assert.equal(file.indexOf(destPath), 0)
-            assert.include(file, 'youtube-dl')
+            assert(file.indexOf(destPath) === 0)
+            assert(file.indexOf('youtube-dl') != -1)
           })
         })
         done()
